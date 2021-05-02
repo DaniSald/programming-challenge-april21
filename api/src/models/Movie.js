@@ -5,7 +5,7 @@ class Movie extends Model {}
 
 Movie.init(
   {
-    movie_id: {
+    id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       allowNull: false,
@@ -24,5 +24,9 @@ Movie.init(
     modelName: "Movie",
   }
 );
+
+Movie.associate = (models) => {
+  Movie.hasMany(models.Rating, { foreignKey: "id" });
+};
 
 module.exports = Movie;

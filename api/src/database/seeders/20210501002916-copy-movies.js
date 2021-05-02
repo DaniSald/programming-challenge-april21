@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.sequelize.query(
-      `COPY movies(movie_id, title, genre) FROM \'${path.join(
+      `COPY movies(id, title, genre) FROM \'${path.join(
         __dirname,
         "..",
         "raw_data",

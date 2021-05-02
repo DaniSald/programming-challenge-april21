@@ -8,21 +8,18 @@ module.exports = {
 
     if (!year) {
       movies = await Movie.findAll({
-        attributes: ["movie_id", "title"],
         where: {
           genre: { [Op.substring]: `${genre}` },
         },
       });
     } else if (!genre) {
       movies = await Movie.findAll({
-        attributes: ["movie_id", "title"],
         where: {
           title: { [Op.endsWith]: `(${year})` },
         },
       });
     } else {
       movies = await Movie.findAll({
-        attributes: ["movie_id", "title"],
         where: {
           title: { [Op.endsWith]: `(${year})` },
           genre: { [Op.substring]: `${genre}` },
