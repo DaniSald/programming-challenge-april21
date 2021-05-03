@@ -6,6 +6,12 @@
 - React Router DOM
 - axios
 
+React offers a lot of paradigms that makes building interfaces easier, such as components, states, life cycles and props. React also provides jsx and css support, so React components are similar to pure HTML files.
+
+The React Router DOM framework provides a simple abstraction that maps our Components to our browser routes, helping us on changing pages.
+
+The axios api handler provides functions to access and fetch data from apis.
+
 ## Steps
 
 1. Create the enviroment variables file `.env` in the `/app` directory. There is a `.env.sample` file that you can rely on.
@@ -23,7 +29,7 @@ yarn
 yarn start
 ```
 
-Just run `yarn start` on future starts. At this point you should be able to access the app [http://localhost:3000](http://localhost:3000).
+Just run `yarn start` on future starts. At this point you should be able to access the app at [http://localhost:3000](http://localhost:3000).
 
 ## Pages
 

@@ -6,6 +6,12 @@
 - node.js with express and sequelize
 - postgresql (local)
 
+Yarn is widly used to manage packages for node applications. Yarn provides a simple, fast and friendly CLI.
+
+Express is the most used framework for building REST apis with node, because of it's minimalism. Sequelize is a ORM that translates JavaScript syntax to SQL queries.
+
+Postgres is a free, fast and open source database system that offers lots of advantages if compared with other database systems, such as clean installation and exclusive query functions.
+
 ## Steps
 
 First of all copy or move the `movies.csv` and `ratings.csv` files from the [dataset](http://files.grouplens.org/datasets/movielens/ml-25m.zip) to the `/api/src/database/raw_data` directory.
