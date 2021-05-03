@@ -6,6 +6,8 @@ Congratulations on being selected to participate in our technical test. It consi
 
 Fork this repository and once you have finished your challenge, grant access to the Github user "kavlac". Upload all your deliverables to your forked repository. We will use it to evaluate your test.
 
+> Access `/api` and `/app` directories for setup information.
+
 ## Introduction
 
 We want you to develop a project that makes uses of the [MovieLens](https://grouplens.org/datasets/movielens/) dataset. It consists of three goals and the details on each one of them is given below.
@@ -23,6 +25,7 @@ Then, you are asked to write a program to read the input files for the dataset a
 The second goal of this challenge is to make the processed data available for consumption.
 
 To do such, you must implement a REST API and it should provide the following methods:
+
 - List movies by year and genre: given a year and a genre, we want to know what movies match the given year and are of the given genre;
 - List top K rated movies: given a number K, we want to know the best K rated movies in descending order.
 
@@ -35,6 +38,7 @@ Thus, you are asked to implement a client application that accesses such an API.
 ## Deliverables
 
 You must provide the following artifacts:
+
 - The source-code of the programs that you implemented;
 - A set of instructions on how to prepare the environment, build the programs, run each part of the challenge, and how to use your project;
 - Comments on what technologies and patterns you used and the reasons to do so, as well as the decisions you made throughout the challenge;
