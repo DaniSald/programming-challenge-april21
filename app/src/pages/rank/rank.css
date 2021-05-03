@@ -1,0 +1,10 @@
+#rank {
+  font-size: larger;
+  margin: 0 10px;
+  width: 150px;
+}
+
+input#submitRank {
+  margin: 0 10px;
+  font-size: larger;
+}
