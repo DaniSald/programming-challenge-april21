@@ -25,8 +25,4 @@ Movie.init(
   }
 );
 
-Movie.associate = (models) => {
-  Movie.hasMany(models.Rating, { foreignKey: "id" });
-};
-
 module.exports = Movie;

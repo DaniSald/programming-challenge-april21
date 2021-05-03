@@ -1,12 +1,12 @@
 # API setup
 
-## Tools used
+## Stack
 
 - yarn
-- node.js with sequelize
+- node.js with express and sequelize
 - postgresql (local)
 
-## steps
+## Steps
 
 First of all copy or move the `movies.csv` and `ratings.csv` files from the [dataset](http://files.grouplens.org/datasets/movielens/ml-25m.zip) to the `/api/src/database/raw_data` directory.
 
@@ -36,20 +36,20 @@ yarn sequelize db:seed:all
 yarn server
 ```
 
-At this point you should be able to access the API at [http://localhost:9000](http://localhost:9000).
+Just run `yarn server` on future starts. At this point you should be able to access the API at [http://localhost:9000](http://localhost:9000).
 
 ## Routes
 
 This API provides two routes for searching in the database.
 
-- `/movie` - Filters the movies by year and genre.
+- `/movie` - Filters the movies by year and/or genre.
 
   - query params:
 
     - `year` - Release year.
-    - `genre` - [Action | Adventure | Animation | Children's | Comedy | Crime | Documentary | Drama | Fantasy | Film-Noir | Horror | Musical | Mystery | Romance | Sci-Fi | Thriller | War | Western]
+    - `genre` - [Action | Adventure | Animation | Children | Comedy | Crime | Documentary | Drama | Fantasy | Film-Noir | Horror | Musical | Mystery | Romance | Sci-Fi | Thriller | War | Western]
 
-    **you can provide one param or both.**
+    **you can provide one param or both, but never none.**
 
 - `/rating/:limit` - Returns the n (limit) best rated movies.
 

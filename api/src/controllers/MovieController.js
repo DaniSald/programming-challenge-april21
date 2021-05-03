@@ -28,7 +28,7 @@ module.exports = {
     }
 
     movies.length === 0
-      ? res.status(404).json({ error: "Nothing found!" })
+      ? res.status(404).json(movies)
       : res.status(200).json(movies);
   },
 };

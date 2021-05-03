@@ -29,7 +29,6 @@ Rating.removeAttribute("id");
 Rating.associate = (models) => {
   Rating.belongsTo(models.Movie, {
     foreignKey: "movie_id",
-    as: "movie",
     onDelete: "CASCADE",
     onUpdate: "CASCADE",
   });
